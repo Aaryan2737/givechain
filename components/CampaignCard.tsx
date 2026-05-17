@@ -10,9 +10,6 @@ export type Campaign = {
   name: string
   description: string
   category: 'Environment' | 'Education' | 'Humanitarian'
-  goal: number
-  raised: number
-  donors: number
   emoji: string
 }
 
@@ -49,7 +46,6 @@ export default function CampaignCard({ campaign }: { campaign: Campaign }) {
     }
   }, [result])
 
-  const pct = Math.round((campaign.raised / campaign.goal) * 100)
   const colors = categoryColors[campaign.category]
 
   async function handleDonate() {
@@ -167,42 +163,7 @@ export default function CampaignCard({ campaign }: { campaign: Campaign }) {
         {campaign.description}
       </p>
 
-      {/* Progress */}
-      <div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginBottom: 8,
-            fontSize: 13,
-          }}
-        >
-          <span style={{ color: '#E4EAF6', fontWeight: 600 }}>{pct}% funded</span>
-          <span style={{ color: '#6B7A99' }}>
-            ${campaign.raised.toLocaleString()} / ${campaign.goal.toLocaleString()}
-          </span>
-        </div>
-        <div className="progress-bar">
-          <div className="progress-fill" style={{ width: `${pct}%` }} />
-        </div>
-      </div>
 
-      {/* Donors */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: 6,
-          fontSize: 13,
-          color: '#6B7A99',
-        }}
-      >
-        <span>👤</span>
-        <span>
-          <strong style={{ color: '#E4EAF6' }}>{campaign.donors.toLocaleString()}</strong>{' '}
-          donors
-        </span>
-      </div>
 
       {/* Donate button */}
       {donated ? (

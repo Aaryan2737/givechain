@@ -12,9 +12,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Plant trees and restore biodiversity in the Amazon rainforest, combating deforestation and climate change one tree at a time.',
     category: 'Environment',
-    goal: 500,
-    raised: 235,
-    donors: 641,
     emoji: '🌳',
   },
   {
@@ -23,9 +20,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Build schools and provide educational materials to underprivileged children in rural Uganda, opening doors to a brighter future.',
     category: 'Education',
-    goal: 250,
-    raised: 188,
-    donors: 412,
     emoji: '📚',
   },
   {
@@ -34,9 +28,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Bring safe drinking water to communities lacking basic sanitation, reducing waterborne diseases across Sub-Saharan Africa.',
     category: 'Humanitarian',
-    goal: 350,
-    raised: 81,
-    donors: 198,
     emoji: '💧',
   },
   {
@@ -45,9 +36,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Deploy advanced cleanup systems to remove plastic waste from ocean gyres, protecting marine ecosystems for generations.',
     category: 'Environment',
-    goal: 400,
-    raised: 240,
-    donors: 320,
     emoji: '🌊',
   },
   {
@@ -56,9 +44,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Install solar panels in off-grid villages, providing clean, reliable electricity to families who have never had power.',
     category: 'Humanitarian',
-    goal: 600,
-    raised: 210,
-    donors: 280,
     emoji: '☀️',
   },
   {
@@ -67,9 +52,6 @@ const allCampaigns: Campaign[] = [
     description:
       'Empower young girls through education programs, scholarships, and safe learning environments across South Asia and Africa.',
     category: 'Education',
-    goal: 300,
-    raised: 246,
-    donors: 510,
     emoji: '👩‍🎓',
   },
 ]

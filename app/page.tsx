@@ -13,9 +13,6 @@ const featuredCampaigns: Campaign[] = [
     description:
       'Plant trees and restore biodiversity in the Amazon rainforest, combating deforestation and climate change.',
     category: 'Environment',
-    goal: 500,
-    raised: 235,
-    donors: 641,
     emoji: '🌳',
   },
   {
@@ -24,9 +21,6 @@ const featuredCampaigns: Campaign[] = [
     description:
       'Build schools and provide educational materials to underprivileged children in rural Uganda.',
     category: 'Education',
-    goal: 250,
-    raised: 188,
-    donors: 412,
     emoji: '📚',
   },
   {
@@ -35,9 +29,6 @@ const featuredCampaigns: Campaign[] = [
     description:
       'Empower young girls through education programs, scholarships, and safe learning environments.',
     category: 'Education',
-    goal: 300,
-    raised: 246,
-    donors: 510,
     emoji: '👩‍🎓',
   },
 ]
